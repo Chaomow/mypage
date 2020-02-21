@@ -2,9 +2,180 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="src/styles/index.css" />
+    <link rel="stylesheet" type="text/css" href="src/styles/RWD.css" />
+    <link rel="stylesheet" type="text/css" href="src/styles/box.css" />
+    <link rel="stylesheet" type="text/css" href="src/styles/header.css" />
+    <link rel="stylesheet" type="text/css" href="src/styles/home.css" />
+    <link rel="stylesheet" type="text/css" href="src/styles/about.css" />
+    <link rel="stylesheet" type="text/css" href="src/styles/skill.css" />
+    <link rel="stylesheet" type="text/css" href="src/styles/animation.css" />
+    <script type="text/javascript" src="src/index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/8e439c2218.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Wayne's Resume</title>
   </head>
-  <body>
-    <h1>Hello World</h1>
+
+  <body onscroll="onScroll()">
+    <!--Alert box-->
+    <span style="display:none" class="alertBox" onclick="showBOx('alertBox')">
+      <span class="iconClose">
+        <i class="far fa-times-circle"></i>
+      </span>
+      <div>
+        <i class="fas fa-exclamation-circle"></i>
+        <p>請使用Google Chrome瀏覽器已獲得最佳瀏覽體驗。</p>
+        <p>Please use Google Chrome to get the best experience.</p>
+      </div>
+    </span>
+
+    <span onclick="switchLanguage()" value="chinese" class="iconLanguage">
+      <i class="fas fa-language"></i>
+    </span>
+
+    <span class="iconGodown">
+      <i class="fas fa-angle-double-down"></i>
+    </span>
+
+    <!--Header-->
+    <div class="header">
+      <a href="#home"><p>首頁</p></a>
+      <a href="#about"><p>關於</p></a>
+      <a href="#skill"><p>技能</p></a>
+      <a href="#work"><p>作品</p></a>
+    </div>
+
+    <!--Home-->
+    <div id="home" class="home">
+      <div class="profileTitle">
+        <p>您好，我是趙仲尉</p>
+      </div>
+
+      <div class="profilePhoto">
+        <img src="src/images/profile/waynePhoto.jpg" alt="my_Profile_photo" />
+      </div>
+
+      <div class="profileTheme">
+        <img src="src/images/profile/theme.png" alt="my_Profile_theme" />
+      </div>
+
+      <span class="locationBox">
+        <a
+          onclick="showBOx('lodingBox')"
+          href="https://goo.gl/maps/di7mpfS3Byf3mgDq7"
+        >
+          <i class="fas fa-map-marker-alt iconLocation"></i>
+          <p>台北市，台灣</p>
+        </a>
+      </span>
+
+      <span class="contactBox">
+        <i class="fab fa-line" onclick="showBOx('lineBox')"></i>
+        <a onclick="showBOx('lodingBox')" href="https://github.com/Chaomow/">
+          <i class="fab fa-github-square iconGithub"></i>
+        </a>
+        <a onclick="showBOx('lodingBox')" href="mailto:wayne415231@gmail.com">
+          <i class="fas fa-envelope-square iconEmail"></i>
+        </a>
+      </span>
+
+      <span class="lineBox" onclick="showBOx('lineBox')" style="display:none">
+        <div>
+          <img src="src/images/profile/lineQR.jpg" />
+        </div>
+        <i class="far fa-times-circle iconClose"></i>
+      </span>
+
+      <span
+        class="lodingBox"
+        onclick="showBOx('lodingBox')"
+        style="display:none"
+      >
+        <i class="fas fa-spinner iconLoading"></i>
+      </span>
+    </div>
+
+    <!--About-->
+    <div id="about" class="about">
+      <div class="aboutTitle">
+        <p>關於</p>
+      </div>
+
+      <div>
+        <div class="education">
+          <p class="aboutList">學歷</p>
+
+          <div>
+            <img
+              class="schoolLogo"
+              src="src/images/school/KUAS_logo.svg.png"
+              alt="KUAS_logo"
+            />
+            <p class="educationList">國立高雄應用科技大學 資訊管理系</p>
+          </div>
+          <div>
+            <img
+              class="schoolLogo"
+              src="src/images/school/Stanley_logo.png"
+              alt="Stanley_logo"
+            />
+            <p class="educationList">澳洲伯斯史丹利學院 西廚與餐飲管理</p>
+          </div>
+          <div>
+            <img
+              class="schoolLogo"
+              src="src/images/school/TAIVS.svg.png"
+              alt="TAIVS_logo"
+            />
+            <p class="educationList">市立大安高級工業職業學校 綜合高中</p>
+          </div>
+        </div>
+
+        <div class="experience">
+          <p class="aboutList">經歷</p>
+          <div>
+            <p>虛擬實境健身腳踏車系統於花博展覽會之應用：</p>
+            <ul>
+              <li>
+                2010第15屆大專校院資訊服務創新競賽Google企業創新應用組第三名
+              </li>
+              <li>2010第15屆大專校院資訊服務創新競賽資訊應用組4C主題獎</li>
+              <li>2010中華電信電信奧斯卡花博應用組佳作</li>
+              <li>2010開放原始碼創新應用開發大賽百資科技贊助獎</li>
+            </ul>
+            <p>即時通訊班務管理系統：</p>
+            <ul>
+              <li>2012高應大資訊管理系第八屆專題競賽-應用創意類 第一名</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="description">
+          <p class="aboutList">簡介</p>
+          <p>
+            我叫趙仲尉，熱愛挑戰新事物、積極學習。從2019年底進修包含Javascript
+            ES6、React Js、React Hook、Redux、AntDesign等前端技術，配合Node
+            JS、NPM，並嫁接API與MongoDB製作一個簡易的即時通訊網站。
+            期許自己能夠持續增進技術，並且創造改變社會與生活的作品。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--skill-->
+    <div id="skill" class="skill">
+      <div class="skillTitle">
+        <p>技能</p>
+      </div>
+
+      <div>
+        <div class="webDesign">
+          <p class="skillList">網頁設計</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

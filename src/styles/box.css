@@ -1,0 +1,53 @@
+.alertBox,
+.lineBox,
+.lodingBox {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100vw;
+  background-color: rgb(0, 0, 0, 0.8);
+  z-index: 3;
+}
+
+.alertBox > div {
+  margin-top: 20vmin;
+  text-align: center;
+  color: #fff;
+}
+
+.iconLanguage {
+  color: #000;
+  opacity: 0.5;
+  position: fixed;
+  left: 3vmin;
+  bottom: 5vh;
+  z-index: 2;
+}
+
+.iconGodown {
+  color: #000;
+  opacity: 0.5;
+  position: fixed;
+  right: 3vmin;
+  bottom: 5vh;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+}
+
+.lineBox div,
+.lodingBox i {
+  position: absolute;
+  width: 100vw;
+  top: 35vh;
+}
+
+.lineBox img {
+  display: block;
+  margin: 0 auto;
+}
+
+.lodingBox > i {
+  color: #fff;
+  text-align: center;
+  animation: myRotate 2s linear infinite;
+}

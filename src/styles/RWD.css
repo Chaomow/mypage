@@ -1,0 +1,163 @@
+.alertBox p,
+.alertBox i,
+.iconClose {
+  font-size: 4vmin;
+}
+
+@media screen and (min-width: 800px) {
+  .header p {
+    font-size: 4vmin;
+  }
+
+  .iconLanguage,
+  .iconGodown,
+  .profileTitle {
+    font-size: 6vmin;
+  }
+
+  .profilePhoto {
+    top: 34vh;
+  }
+  .profilePhoto img {
+    width: 25vmin;
+  }
+  .profileTheme {
+    top: 25vh;
+  }
+  .profileTheme img {
+    width: 70vmin;
+  }
+
+  .locationBox {
+    bottom: 12vh;
+    left: 8vw;
+  }
+  .locationBox > a > * {
+    font-size: 5vmin;
+  }
+
+  .iconLoading {
+    font-size: 15vmin;
+  }
+
+  .lineBox img {
+    width: 30vmin;
+  }
+
+  .contactBox {
+    bottom: 3vh;
+    right: 5vw;
+    font-size: 10vmin;
+  }
+
+  .aboutTitle,
+  .skillTitle {
+    font-size: 10vmin;
+    top: 8vh;
+  }
+
+  .aboutList,
+  .skillList {
+    font-size: 4vmin;
+    margin: 10vmin 0 5vmin 0;
+  }
+
+  .education > div > * {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .education > div,
+  .experience > div,
+  .description > p:nth-child(2) {
+    margin-top: 5vmin;
+    left: 15vw;
+    width: 70vw;
+  }
+
+  .education > div > p,
+  .experience > div > p,
+  .experience ul,
+  .experience li,
+  .description p:nth-child(2) {
+    font-size: 3vmin;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    text-align: center;
+  }
+
+  .header p {
+    font-size: 6vmin;
+  }
+
+  .iconLanguage,
+  .iconGodown,
+  .profileTitle {
+    font-size: 8vmin;
+  }
+
+  .profilePhoto {
+    top: 33vh;
+  }
+  .profilePhoto img {
+    width: 35vmin;
+  }
+  .profileTheme {
+    top: 25vh;
+  }
+  .profileTheme img {
+    width: 65vmin;
+  }
+
+  .locationBox {
+    bottom: 15vh;
+    left: 8vw;
+  }
+  .locationBox > a > * {
+    font-size: 6vmin;
+  }
+
+  .iconLoading {
+    font-size: 30vmin;
+  }
+
+  .lineBox img {
+    width: 50vmin;
+  }
+  .contactBox {
+    bottom: 5vh;
+    right: 10vw;
+    font-size: 10vmin;
+  }
+
+  .aboutTitle,
+  .skillTitle {
+    font-size: 10vmin;
+    top: 12vh;
+  }
+
+  .aboutList,
+  .skillList {
+    font-size: 6vmin;
+    margin: 15vmin 0 5vmin 0;
+  }
+
+  .education > div,
+  .experience > div,
+  .description > p:nth-child(2) {
+    margin-top: 5vmin;
+    left: 10vw;
+    width: 80vw;
+  }
+
+  .education > div > p,
+  .experience > div > p,
+  .experience ul,
+  .experience li,
+  .description p:nth-child(2) {
+    font-size: 4vmin;
+  }
+}

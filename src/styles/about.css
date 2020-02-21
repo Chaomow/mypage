@@ -1,0 +1,41 @@
+.about {
+  background-color: #8dc2d0;
+  padding-bottom: 10vh;
+}
+
+.aboutTitle {
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+.description,
+.education,
+.experience {
+  width: 80vw;
+}
+
+.aboutList {
+  position: relative;
+  left: 10vw;
+  color: #fff;
+}
+
+.education > div,
+.experience > div,
+.description > p:nth-child(2) {
+  position: relative;
+}
+
+.schoolLogo {
+  height: 4vmin;
+  width: 4vmin;
+}
+
+.education > div > p,
+.experience > div > p,
+.experience ul,
+.experience li,
+.description p {
+  color: #fff;
+}

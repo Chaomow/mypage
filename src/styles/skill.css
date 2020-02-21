@@ -1,0 +1,16 @@
+.skill {
+  background-color: #ddd;
+  padding-bottom: 10vh;
+}
+
+.skillTitle {
+  position: relative;
+  text-align: center;
+  color: #002b57;
+}
+
+.skillList {
+  position: relative;
+  left: 10vw;
+  color: #002b57;
+}

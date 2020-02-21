@@ -1,0 +1,36 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  font-family: Microsoft JhengHei, fantasy;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+p,
+ul,
+li,
+span {
+  text-shadow: 1px 1px 2px #888;
+}

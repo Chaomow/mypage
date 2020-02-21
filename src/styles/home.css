@@ -1,0 +1,67 @@
+.iconClose {
+  color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.home {
+  background-color: #5fbad2;
+  height: 100vh;
+}
+
+.profileTitle {
+  position: absolute;
+  text-align: center;
+  top: 20vh;
+  width: 100%;
+  color: #fff;
+}
+
+.profilePhoto {
+  position: absolute;
+  width: 100vw;
+  z-index: 1;
+}
+
+.profileTheme {
+  position: absolute;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.profilePhoto > img {
+  display: block;
+  margin: 0 auto;
+  border: solid rgb(245, 245, 245) 3vmin;
+  border-radius: 50%;
+  transition-property: box-shadow, width;
+  transition-duration: 0.5s;
+}
+
+.profilePhoto > img:hover {
+  width: 50vh;
+  box-shadow: 0 0 50vmin #fff;
+}
+
+.profileTheme > img {
+  display: block;
+  margin: 0 auto;
+}
+
+.locationBox {
+  position: absolute;
+}
+
+.locationBox > a > * {
+  display: inline-block;
+  color: #fff;
+}
+
+.contactBox {
+  position: absolute;
+}
+
+.contactBox i {
+  color: #fff;
+}

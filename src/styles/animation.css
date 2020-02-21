@@ -1,0 +1,53 @@
+.iconLanguage:hover,
+.iconClose:hover,
+.locationBox > a:hover i,
+.contactBox i:hover {
+  animation: myShake 0.2s linear infinite;
+  cursor: pointer;
+}
+
+.iconGodown {
+  animation: upDown 1s linear infinite;
+}
+
+@-webkit-keyframes upDown {
+  0% {
+    bottom: 5vh;
+  }
+  50% {
+    bottom: 4vh;
+  }
+  100% {
+    bottom: 5vh;
+  }
+}
+
+@-webkit-keyframes myRotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes myShake {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(5deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}

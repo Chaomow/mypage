@@ -11,8 +11,14 @@ const data = {
     ],
     description:
       "我叫趙仲尉，熱愛挑戰新事物、積極學習。" +
-      "</br>從2019年底進修包含Javascript ES6、React Js、React Hook、Redux、AntDesign等前端技術，配合Node JS、NPM，並嫁接API與MongoDB製作一個簡易的即時通訊網站。" +
-      "</br>期許自己能夠持續增進技術，並且創造改變社會與生活的作品。"
+      "</br></br>從2019年底進修包含Javascript ES6、React Js、React Hook、Redux、AntDesign等前端技術，配合Node JS、NPM，並嫁接API與MongoDB製作一個簡易的即時通訊網站。" +
+      "</br></br>期許自己能夠持續增進技術，並且創造改變社會與生活的作品。",
+    skillCat: ["網頁前端", "網頁後端", "其他"],
+    skillArea: [
+      ["基礎前端", "前端框架", "介面設計", "應用介面", "套件管理"],
+      ["作業系統", "伺服器", "資料庫"],
+      ["程式語言", "版本控制", "編輯工具"]
+    ]
   },
   english: {
     menu: ["HOME", "ABOUT", "SKILL", "WORKS"],
@@ -26,10 +32,17 @@ const data = {
     ],
     description:
       "My name is Chung-Wei Chao. You can call me Wayne." +
-      "</br>I was studying in Hospitality in Westen Australia Perth last year. It's shown that I can understand technique paper by english without any problem." +
-      "</br>I'm a fast learner and humble for asking and sharing. I have passion and eager to learn new skills and knowledge. I'm currently guided by a front-end engineering supervisor. Learning about React JS, Node JS and MondoDB lately." +
-      "</br>Wish I can provide Influence and power to a company. Thanks"
-  }
+      "</br></br>I was studying in Hospitality in Westen Australia Perth last year. It's shown that I can understand technique paper by english without any problem." +
+      "</br></br>I'm a fast learner and humble for asking and sharing. I have passion and eager to learn new skills and knowledge. I'm currently guided by a front-end engineering supervisor. Learning about React JS, Node JS and MondoDB lately." +
+      "</br></br>Wish I can provide Influence and power to a company. Thanks",
+    skillCat: ["Front-End", "Back-End", "Other"],
+    skillArea: [
+      ["Basic", "Library", "UI Design", "API", "Package Tools"],
+      ["System", "Server", "Database"],
+      ["Coding Language", "version COntrol", "Code Editor"]
+    ]
+  },
+  codeLogo: {}
 };
 
 function onScroll() {
@@ -55,13 +68,18 @@ function switchLanguage() {
   const aboutTitle = document
     .getElementsByClassName("aboutTitle")[0]
     .getElementsByTagName("p")[0];
+  const skillTitle = document
+    .getElementsByClassName("skillTitle")[0]
+    .getElementsByTagName("p")[0];
   const aboutList = document.getElementsByClassName("aboutList");
   const educationList = document.getElementsByClassName("educationList");
   const description = document
     .getElementsByClassName("description")[0]
     .getElementsByTagName("p")[1];
+  const skillCat = document.getElementsByClassName("skillCatList");
 
   if (language.getAttribute("value") === "chinese") {
+    document.title = "Wayne Chao";
     language.setAttribute("value", "english");
     //Header Menu
     for (var key = 0; key < menu.length; key++) {
@@ -71,6 +89,8 @@ function switchLanguage() {
     profileTitle.innerHTML = data.english.profileTitle;
     //AboutTitle
     aboutTitle.innerHTML = data.english.menu[1];
+    //SkillTitle
+    skillTitle.innerHTML = data.english.menu[2];
     //Location
     location.innerHTML = data.english.location;
     //About List
@@ -83,7 +103,12 @@ function switchLanguage() {
     }
     //description
     description.innerHTML = data.english.description;
+    //skillCat List
+    for (var key = 0; key < skillCat.length; key++) {
+      skillCat[key].innerHTML = data.english.skillCat[key];
+    }
   } else {
+    document.title = "趙仲尉";
     language.setAttribute("value", "chinese");
     //Header Menu
     for (var key = 0; key < menu.length; key++) {
@@ -93,6 +118,8 @@ function switchLanguage() {
     profileTitle.innerHTML = data.chinese.profileTitle;
     //AboutTitle
     aboutTitle.innerHTML = data.chinese.menu[1];
+    //SkillTitle
+    skillTitle.innerHTML = data.chinese.menu[2];
     //Location
     location.innerHTML = data.chinese.location;
     //About List
@@ -105,6 +132,10 @@ function switchLanguage() {
     }
     //description
     description.innerHTML = data.chinese.description;
+    //skillCat List
+    for (var key = 0; key < skillCat.length; key++) {
+      skillCat[key].innerHTML = data.chinese.skillCat[key];
+    }
   }
 }
 

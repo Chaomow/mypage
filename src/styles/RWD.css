@@ -82,6 +82,20 @@
   .description p:nth-child(2) {
     font-size: 3vmin;
   }
+
+  .skillArea {
+    width: 40vw;
+    margin: 5vh 2vw 10vh 2vw;
+  }
+
+  .skillIcon > p {
+    width: 12vw;
+    font-size: 2vmin;
+  }
+
+  .skillLogo {
+    width: 5vw;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -90,7 +104,7 @@
   }
 
   .header p {
-    font-size: 6vmin;
+    font-size: 5vmin;
   }
 
   .iconLanguage,
@@ -159,5 +173,23 @@
   .experience li,
   .description p:nth-child(2) {
     font-size: 4vmin;
+  }
+
+  .skillArea {
+    width: 80vw;
+    margin: 5vh 0;
+  }
+
+  .skillIcon {
+    margin-top: 5vmin;
+  }
+
+  .skillIcon > p {
+    width: 25vw;
+    font-size: 5vw;
+  }
+
+  .skillLogo {
+    width: 10vw;
   }
 }

@@ -1,20 +1,45 @@
 .skill {
-  background-color: #ddd;
-  padding-bottom: 10vh;
+  background-color: #fff;
+  color: #002b57;
 }
 
 .skillTitle {
   position: relative;
   text-align: center;
-  color: #002b57;
+}
+
+.skillCat {
+  padding: 5vh;
+}
+
+.skillCat > p {
+  position: relative;
+  text-align: left;
+  color: #ff7575;
+  font-weight: bold;
+  font-size: 6vmin;
+  left: 5vw;
+  width: 50vw;
+}
+
+.skillCat:nth-child(2) {
+  background-color: #ddd;
 }
 
 .skillList {
-  position: relative;
-  left: 10vw;
-  color: #002b57;
+  text-align: center;
 }
 
-.webDesign {
-  width: 80vw;
+.skillArea {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.skillIcon {
+  display: inline-block;
+  margin-top: 5vmin;
+}
+
+.skillIcon {
+  display: inline-block;
 }

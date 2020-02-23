@@ -4,19 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="src/styles/index.css" />
-    <link rel="stylesheet" type="text/css" href="src/styles/RWD.css" />
-    <link rel="stylesheet" type="text/css" href="src/styles/box.css" />
-    <link rel="stylesheet" type="text/css" href="src/styles/header.css" />
-    <link rel="stylesheet" type="text/css" href="src/styles/home.css" />
-    <link rel="stylesheet" type="text/css" href="src/styles/about.css" />
-    <link rel="stylesheet" type="text/css" href="src/styles/skill.css" />
-    <link rel="stylesheet" type="text/css" href="src/styles/animation.css" />
     <script type="text/javascript" src="src/index.js"></script>
     <script
       src="https://kit.fontawesome.com/8e439c2218.js"
       crossorigin="anonymous"
     ></script>
-    <title>Wayne's Resume</title>
+    <title>趙仲尉</title>
   </head>
 
   <body onscroll="onScroll()">
@@ -32,7 +25,7 @@
       </div>
     </span>
 
-    <span onclick="switchLanguage()" value="chinese" class="iconLanguage">
+    <span class="iconLanguage" onclick="switchLanguage()" value="chinese">
       <i class="fas fa-language"></i>
     </span>
 
@@ -55,7 +48,9 @@
       </div>
 
       <div class="profilePhoto">
-        <img src="src/images/profile/waynePhoto.jpg" alt="my_Profile_photo" />
+        <a href="https://www.cakeresume.com/wayne415231">
+          <img src="src/images/profile/waynePhoto.jpg" alt="my_Profile_photo" />
+        </a>
       </div>
 
       <div class="profileTheme">
@@ -156,9 +151,9 @@
         <div class="description">
           <p class="aboutList">簡介</p>
           <p>
-            我叫趙仲尉，熱愛挑戰新事物、積極學習。從2019年底進修包含Javascript
+            我叫趙仲尉，熱愛挑戰新事物、積極學習。</br></br>從2019年底進修包含Javascript
             ES6、React Js、React Hook、Redux、AntDesign等前端技術，配合Node
-            JS、NPM，並嫁接API與MongoDB製作一個簡易的即時通訊網站。
+            JS、NPM，並嫁接API與MongoDB製作一個簡易的即時通訊網站。</br></br>
             期許自己能夠持續增進技術，並且創造改變社會與生活的作品。
           </p>
         </div>
@@ -171,9 +166,163 @@
         <p>技能</p>
       </div>
 
-      <div>
-        <div class="webDesign">
-          <p class="skillList">網頁設計2</p>
+      <div class="skillList">
+        <div class="skillCat">
+          <p class="skillCatList">網頁前端</p>
+          <div class="skillArea"">
+            <p>基礎前端</p>
+            <div class="skillIcon">
+              <img class="skillLogo" src="src/images/skill/html.png" alt="HTML5" />
+              <p>HTML5</p>
+            </div>
+            <div class="skillIcon">
+              <img class="skillLogo" src="src/images/skill/css.png" alt="CSS3" />
+              <p>CSS3</p>
+            </div>
+            <div class="skillIcon">
+              <img class="skillLogo" src="src/images/skill/javascript.png" alt="Javascript" />
+              <p>Javascript</p>
+            </div>
+          </div>
+          <div class="skillArea">
+            <p>前端框架</p>
+            <div class="skillIcon">
+              <img class="skillLogo" src="src/images/skill/reactjs.png" alt="React JS" />
+              <p>React JS</p>
+            </div>
+            <div class="skillIcon">
+              <img class="skillLogo" src="src/images/skill/redux.png" alt="Redux" />
+              <p>Redux</p>
+            </div>
+            <div class="skillIcon">
+              <img class="skillLogo" src="src/images/skill/jsx.png" alt="JSX" />
+              <p>JSX</p>
+            </div>
+          </div>
+          <div class="skillArea">
+            <p>介面設計</p>
+            <div class="skillIcon">
+              <img class="skillLogo" src="src/images/skill/RWD.png" alt="RWD" />
+              <p>RWD</p>
+            </div>
+            <div class="skillIcon">
+              <img class="skillLogo" src="src/images/skill/sass.png" alt="SASS" />
+              <p>SASS</p>
+            </div>
+            <div class="skillIcon">
+              <img class="skillLogo" src="src/images/skill/cssmodule.png" alt="CSS MODULE" />
+              <p>CSS MODULE</p>
+            </div>
+            <div class="skillIcon">
+              <img class="skillLogo" src="src/images/skill/antdesign.png" alt="Ant Design" />
+              <p>Ant Design</p>
+            </div>
+            <div class="skillIcon">
+              <img class="skillLogo" src="src/images/skill/fontawesome.png" alt="Font Awesome" />
+              <p>Font Awesome</p>
+            </div>
+          </div>
+          <div class="skillArea">
+            <p>應用介面</p>
+            <div class="skillIcon">
+              <img class="skillLogo" src="src/images/skill/axios.png" alt="AXIOS" />
+              <p>AXIOS</p>
+            </div>
+            <div class="skillIcon">
+              <img class="skillLogo" src="src/images/skill/restfulapi.png" alt="REST API" />
+              <p>REST API</p>
+            </div>
+            <div class="skillIcon">
+              <img class="skillLogo" src="src/images/skill/jquery.png" alt="jQuery" />
+              <p>jQuery</p>
+            </div>
+          </div>
+          <div class="skillArea">
+            <p>套件管理</p>
+            <div class="skillIcon">
+              <img class="skillLogo" src="src/images/skill/npm.png" alt="NPM" />
+              <p>NPM</p>
+            </div>
+            <div class="skillIcon">
+              <img class="skillLogo" src="src/images/skill/webpack.png" alt="Webpack" />
+              <p>Webpack</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skillCat">
+          <p class="skillCatList">網頁後端</p>
+          <div class="skillArea"">
+            <p>作業系統</p>
+            <div class="skillIcon">
+              <img class="skillLogo" src="src/images/skill/centos.png" alt="centos" />
+              <p>CentOs</p>
+            </div>
+            <div class="skillIcon">
+              <img class="skillLogo" src="src/images/skill/ubuntu.png" alt="ubuntu" />
+              <p>Ubuntu</p>
+            </div>
+          </div>
+          <div class="skillArea">
+            <p>伺服器</p>
+            <div class="skillIcon">
+              <img class="skillLogo" src="src/images/skill/nodejs.png" alt="Node JS" />
+              <p>Node JS</p>
+            </div>
+            <div class="skillIcon">
+              <img class="skillLogo" src="src/images/skill/apaches.png" alt="Apaches" />
+              <p>Apaches</p>
+            </div>
+          </div>
+          <div class="skillArea">
+            <p>資料庫</p>
+            <div class="skillIcon">
+              <img class="skillLogo" src="src/images/skill/mongodb.png" alt="Mongo DB" />
+              <p>Mongo DB</p>
+            </div>
+            <div class="skillIcon">
+              <img class="skillLogo" src="src/images/skill/mysql.png" alt="MySQL" />
+              <p>MySQL</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="skillCat">
+          <p class="skillCatList">其他</p>
+          <div class="skillArea">
+            <p>程式語言</p>
+            <div class="skillIcon">
+              <img class="skillLogo" src="src/images/skill/php.png" alt="PHP" />
+              <p>PHP</p>
+            </div>
+            <div class="skillIcon">
+              <img class="skillLogo" src="src/images/skill/java.png" alt="JAVA" />
+              <p>JAVA</p>
+            </div>
+            <div class="skillIcon">
+              <img class="skillLogo" src="src/images/skill/c++.png" alt="C++" />
+              <p>C++</p>
+            </div>
+          </div>
+          <div class="skillArea">
+            <p>版本控制</p>
+            <div class="skillIcon">
+              <img class="skillLogo" src="src/images/skill/github.png" alt="Github" />
+              <p>Github</p>
+            </div>
+          </div>
+          <div class="skillArea">
+            <p>編輯工具</p>
+            <div class="skillIcon">
+              <img class="skillLogo" src="src/images/skill/vscode.png" alt="Visual Studio Code" />
+              <p>Visual Studio Code</p>
+            </div>
+            <div class="skillIcon">
+              <img class="skillLogo" src="src/images/skill/Notepad++.png" alt="Notepad++" />
+              <p>Notepad++</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

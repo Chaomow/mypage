@@ -1,3 +1,11 @@
+@import "RWD.css";
+@import "box.css";
+@import "header.css";
+@import "home.css";
+@import "about.css";
+@import "skill.css";
+@import "animation.css";
+
 html {
   scroll-behavior: smooth;
 }
@@ -26,11 +34,4 @@ a {
 
 p {
   margin: 0;
-}
-
-p,
-ul,
-li,
-span {
-  text-shadow: 1px 1px 2px #888;
 }

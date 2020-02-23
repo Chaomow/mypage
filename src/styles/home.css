@@ -30,7 +30,7 @@
   overflow-x: hidden;
 }
 
-.profilePhoto > img {
+.profilePhoto img {
   display: block;
   margin: 0 auto;
   border: solid rgb(245, 245, 245) 3vmin;
@@ -39,7 +39,7 @@
   transition-duration: 0.5s;
 }
 
-.profilePhoto > img:hover {
+.profilePhoto img:hover {
   width: 50vh;
   box-shadow: 0 0 50vmin #fff;
 }

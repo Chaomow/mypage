@@ -51,15 +51,16 @@
   }
 
   .aboutTitle,
-  .skillTitle {
+  .skillTitle,
+  .workTitle {
     font-size: 10vmin;
     top: 8vh;
   }
 
   .aboutList,
-  .skillList {
+  .skillCatList {
     font-size: 4vmin;
-    margin: 10vmin 0 5vmin 0;
+    margin-top: 10vmin;
   }
 
   .education > div > * {
@@ -68,7 +69,7 @@
   }
 
   .education > div,
-  .experience > div,
+  .award > div,
   .description > p:nth-child(2) {
     margin-top: 5vmin;
     left: 15vw;
@@ -76,16 +77,17 @@
   }
 
   .education > div > p,
-  .experience > div > p,
-  .experience ul,
-  .experience li,
+  .award > div > p,
+  .award ul,
+  .award li,
   .description p:nth-child(2) {
     font-size: 3vmin;
   }
 
   .skillArea {
     width: 40vw;
-    margin: 5vh 2vw 10vh 2vw;
+    margin: 3vh 2vw 5vh 2vw;
+    font-size: 3vmin;
   }
 
   .skillIcon > p {
@@ -148,19 +150,20 @@
   }
 
   .aboutTitle,
-  .skillTitle {
+  .skillTitle,
+  .workTitle {
     font-size: 10vmin;
     top: 12vh;
   }
 
   .aboutList,
-  .skillList {
+  .skillCatList {
     font-size: 6vmin;
-    margin: 20vh 0 5vmin 0;
+    margin-top: 20vmin;
   }
 
   .education > div,
-  .experience > div,
+  .award > div,
   .description > p:nth-child(2) {
     margin-top: 5vmin;
     left: 10vw;
@@ -168,16 +171,17 @@
   }
 
   .education > div > p,
-  .experience > div > p,
-  .experience ul,
-  .experience li,
+  .award > div > p,
+  .award ul,
+  .award li,
   .description p:nth-child(2) {
     font-size: 4vmin;
   }
 
   .skillArea {
     width: 80vw;
-    margin: 5vh 0;
+    margin: 10vmin 0;
+    font-size: 5vmin;
   }
 
   .skillIcon {
@@ -186,7 +190,7 @@
 
   .skillIcon > p {
     width: 25vw;
-    font-size: 5vw;
+    font-size: 5vmin;
   }
 
   .skillLogo {

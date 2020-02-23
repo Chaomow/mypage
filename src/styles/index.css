@@ -4,6 +4,7 @@
 @import "home.css";
 @import "about.css";
 @import "skill.css";
+@import "work.css";
 @import "animation.css";
 
 html {
@@ -34,4 +35,15 @@ a {
 
 p {
   margin: 0;
+}
+
+.madeBy {
+  height: 20vh;
+  background-color: #3d7878;
+  text-align: center;
+  color: #fff;
+}
+.madeBy p {
+  position: relative;
+  top: 5vh;
 }

@@ -15,16 +15,24 @@ const data = {
       "</br></br>期許自己能夠持續增進技術，並且創造改變社會與生活的作品。",
     skillCat: ["網頁前端", "網頁後端", "其他"],
     skillArea: [
-      ["基礎前端", "前端框架", "介面設計", "應用介面", "套件管理"],
-      ["作業系統", "伺服器", "資料庫"],
-      ["程式語言", "版本控制", "編輯工具"]
+      "基礎前端",
+      "前端框架",
+      "介面設計",
+      "應用程式介面",
+      "套件管理",
+      "作業系統",
+      "伺服器",
+      "資料庫",
+      "程式語言",
+      "版本控制",
+      "編輯工具"
     ]
   },
   english: {
     menu: ["HOME", "ABOUT", "SKILL", "WORKS"],
     profileTitle: "Hello, I'm Wayne Chao",
     location: "TAIPEI R.O.C",
-    aboutList: ["EDUCATION", "EXPERIENCE", "DESCRIPTION"],
+    aboutList: ["EDUCATION", "AWARD", "DESCRIPTION"],
     educationList: [
       "National Kaohsiung University of Applied Sciences, </br>Department of Information Management",
       "Stanley College Perth Western Australia, </br>Cookery and Hospitality",
@@ -37,9 +45,17 @@ const data = {
       "</br></br>Wish I can provide Influence and power to a company. Thanks",
     skillCat: ["Front-End", "Back-End", "Other"],
     skillArea: [
-      ["Basic", "Library", "UI Design", "API", "Package Tools"],
-      ["System", "Server", "Database"],
-      ["Coding Language", "version COntrol", "Code Editor"]
+      "Basic",
+      "Library",
+      "UI Design",
+      "API",
+      "Package Tools",
+      "System",
+      "Server",
+      "Database",
+      "Coding Language",
+      "version COntrol",
+      "Code Editor"
     ]
   },
   codeLogo: {}
@@ -71,12 +87,16 @@ function switchLanguage() {
   const skillTitle = document
     .getElementsByClassName("skillTitle")[0]
     .getElementsByTagName("p")[0];
+  const workTitle = document
+    .getElementsByClassName("workTitle")[0]
+    .getElementsByTagName("p")[0];
   const aboutList = document.getElementsByClassName("aboutList");
   const educationList = document.getElementsByClassName("educationList");
   const description = document
     .getElementsByClassName("description")[0]
     .getElementsByTagName("p")[1];
   const skillCat = document.getElementsByClassName("skillCatList");
+  const skillArea = document.getElementsByClassName("skillArea");
 
   if (language.getAttribute("value") === "chinese") {
     document.title = "Wayne Chao";
@@ -91,6 +111,8 @@ function switchLanguage() {
     aboutTitle.innerHTML = data.english.menu[1];
     //SkillTitle
     skillTitle.innerHTML = data.english.menu[2];
+    //WorkTitle
+    workTitle.innerHTML = data.english.menu[3];
     //Location
     location.innerHTML = data.english.location;
     //About List
@@ -107,6 +129,11 @@ function switchLanguage() {
     for (var key = 0; key < skillCat.length; key++) {
       skillCat[key].innerHTML = data.english.skillCat[key];
     }
+    //skillArea List
+    for (var key = 0; key < skillArea.length; key++) {
+      skillArea[key].getElementsByTagName("p")[0].innerHTML =
+        data.english.skillArea[key];
+    }
   } else {
     document.title = "趙仲尉";
     language.setAttribute("value", "chinese");
@@ -120,6 +147,8 @@ function switchLanguage() {
     aboutTitle.innerHTML = data.chinese.menu[1];
     //SkillTitle
     skillTitle.innerHTML = data.chinese.menu[2];
+    //WorkTitle
+    workTitle.innerHTML = data.chinese.menu[3];
     //Location
     location.innerHTML = data.chinese.location;
     //About List
@@ -135,6 +164,11 @@ function switchLanguage() {
     //skillCat List
     for (var key = 0; key < skillCat.length; key++) {
       skillCat[key].innerHTML = data.chinese.skillCat[key];
+    }
+    //skillArea List
+    for (var key = 0; key < skillArea.length; key++) {
+      skillArea[key].getElementsByTagName("p")[0].innerHTML =
+        data.chinese.skillArea[key];
     }
   }
 }

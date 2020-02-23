@@ -11,7 +11,7 @@
 
 .description,
 .education,
-.experience {
+.award {
   width: 80vw;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .education > div,
-.experience > div,
+.award > div,
 .description > p:nth-child(2) {
   position: relative;
 }
@@ -33,9 +33,9 @@
 }
 
 .education > div > p,
-.experience > div > p,
-.experience ul,
-.experience li,
+.award > div > p,
+.award ul,
+.award li,
 .description p {
   color: #fff;
 }

@@ -1,6 +1,6 @@
 .skill {
-  background-color: #fff;
   color: #002b57;
+  padding-bottom: 10vh;
 }
 
 .skillTitle {
@@ -8,22 +8,14 @@
   text-align: center;
 }
 
-.skillCat {
-  padding: 5vh;
-}
-
-.skillCat > p {
+.skillCatList {
   position: relative;
   text-align: left;
-  color: #ff7575;
+  color: #7b7b7b;
   font-weight: bold;
-  font-size: 6vmin;
-  left: 5vw;
-  width: 50vw;
-}
-
-.skillCat:nth-child(2) {
-  background-color: #ddd;
+  left: 10vw;
+  width: 80vw;
+  border-bottom: #ddd solid 3px;
 }
 
 .skillList {

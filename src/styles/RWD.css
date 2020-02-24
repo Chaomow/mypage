@@ -4,6 +4,7 @@
   font-size: 4vmin;
 }
 
+/*Normal size*/
 @media screen and (min-width: 800px) {
   .header p {
     font-size: 4vmin;
@@ -98,8 +99,31 @@
   .skillLogo {
     width: 5vw;
   }
+
+  .workList {
+    margin: 20vh auto 0 auto;
+    width: 80vw;
+  }
+
+  .workArea {
+    margin: 0 1vw 15vh 1vw;
+    width: 36vw;
+  }
+
+  .workInfo > p:first-child {
+    font-size: 4vmin;
+  }
+
+  .workInfo > p:nth-child(2) {
+    font-size: 3vmin;
+  }
+
+  .workArea > a {
+    font-size: 5vmin;
+  }
 }
 
+/* Mobile size */
 @media screen and (max-width: 800px) {
   .header {
     text-align: center;
@@ -195,5 +219,27 @@
 
   .skillLogo {
     width: 10vw;
+  }
+
+  .workList {
+    margin: 20vh auto 0 auto;
+    width: 80vw;
+  }
+
+  .workArea {
+    margin-bottom: 15vh;
+    width: 80vw;
+  }
+
+  .workInfo > p:first-child {
+    font-size: 5vmin;
+  }
+
+  .workInfo > p:nth-child(2) {
+    font-size: 4vmin;
+  }
+
+  .workArea > a {
+    font-size: 8vmin;
   }
 }

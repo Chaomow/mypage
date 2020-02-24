@@ -10,24 +10,20 @@
 }
 
 .workList {
-  margin: 20vh auto 0 auto;
-  width: 80vw;
   text-align: center;
 }
 
 .workArea {
   display: inline-block;
   vertical-align: top;
-  margin: 0 1vw;
-  width: 36vw;
 }
 
 .workPicture {
   display: block;
+  color: #cf9e9e;
   margin: 0 auto 2vmin auto;
   height: 5vh;
   font-size: 5vh;
-  color: #cf9e9e;
 }
 
 .workArea > p {
@@ -35,19 +31,23 @@
 }
 
 .workInfo > p:first-child {
+  border-bottom: #7b7b7b solid 2px;
   text-align: center;
   font-weight: bold;
-  font-size: 4vmin;
 }
 
 .workInfo > p:nth-child(2) {
   text-align: left;
-  font-size: 3vmin;
   margin: 4vmin 0;
 }
 
-.workSkill > img {
+.workSkill img {
   display: inline-block;
   vertical-align: middle;
   width: 5vmin;
+}
+
+.workArea > a {
+  display: inline-block;
+  color: #0072e3;
 }

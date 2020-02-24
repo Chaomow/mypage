@@ -1,7 +1,8 @@
 .iconLanguage:hover,
 .iconClose:hover,
 .locationBox > a:hover i,
-.contactBox i:hover {
+.contactBox i:hover,
+.workArea > a:hover {
   animation: myShake 0.2s linear infinite;
   cursor: pointer;
 }

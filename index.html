@@ -233,6 +233,10 @@
               <p>REST API</p>
             </div>
             <div class="skillIcon">
+              <img class="skillLogo" src="src/images/skill/jsp.png" alt="JSP" />
+              <p>JSP</p>
+            </div>
+            <div class="skillIcon">
               <img class="skillLogo" src="src/images/skill/jquery.png" alt="jQuery" />
               <p>jQuery</p>
             </div>
@@ -283,6 +287,10 @@
             <div class="skillIcon">
               <img class="skillLogo" src="src/images/skill/mysql.png" alt="MySQL" />
               <p>MySQL</p>
+            </div>
+            <div class="skillIcon">
+              <img class="skillLogo" src="src/images/skill/googlecloud.png" alt="Google Cloud" />
+              <p>Google Cloud</p>
             </div>
           </div>
         </div>
@@ -342,18 +350,19 @@
               使用React JS框架，結合Ant Design、Node JS、NPM、Mongo DB，呈現一個簡易的聊天室。</p>
           </div>
           <div class="workSkill">
-                <img src="src/images/skill/html.png" alt="HTML5" />
-                <img src="src/images/skill/css.png" alt="CSS3" />
-                <img src="src/images/skill/javascript.png" alt="Javascript" />
-                <img src="src/images/skill/antdesign.png" alt="Ant Design" />
-                <img src="src/images/skill/mongodb.png" alt="Mongo DB" />
-                <img src="src/images/skill/restfulapi.png" alt="REST API" />
-                <img src="src/images/skill/axios.png" alt="AXIOS" />
-                <img src="src/images/skill/npm.png" alt="NPM" />
-                <img src="src/images/skill/nodejs.png" alt="Node JS" />
+            <img src="src/images/skill/html.png" alt="HTML5" />
+            <img src="src/images/skill/css.png" alt="CSS3" />
+            <img src="src/images/skill/javascript.png" alt="Javascript" />
+            <img src="src/images/skill/antdesign.png" alt="Ant Design" />
+            <img src="src/images/skill/mongodb.png" alt="Mongo DB" />
+            <img src="src/images/skill/restfulapi.png" alt="REST API" />
+            <img src="src/images/skill/axios.png" alt="AXIOS" />
+            <img src="src/images/skill/npm.png" alt="NPM" />
+            <img src="src/images/skill/nodejs.png" alt="Node JS" />
           </div>
           <p>2020-01</p>
-          <a href="./src/file/MyChattingProject.pdf"><p>Download PDF</p></a>
+          <a onclick="showBOx('lodingBox')" href="./src/file/MyChattingProject.pdf"><i class="fas fa-cloud-download-alt"></i></a>
+          <a onclick="showBOx('lodingBox')" href="https://github.com/Chaomow/My-Chatting-Projrct"><i class="fab fa-github"></i></a>
         </div>
 
         <div class="workArea">
@@ -363,17 +372,57 @@
             <p>該履歷使用HTML、CSS、JA履歷使用HTML、CSS、Javascript等前端語言，結合FontAwesome的圖示以及響應式網頁的設計概念所製作。</p>
           </div>
           <div class="workSkill">
-                <img src="src/images/skill/html.png" alt="HTML5" />
-                <img src="src/images/skill/css.png" alt="CSS3" />
-                <img src="src/images/skill/javascript.png" alt="Javascript" />
-                <img src="src/images/skill/fontawesome.png" alt="FontAwesome" />
-                <img src="src/images/skill/RWD.png" alt="RWD" />
+            <img src="src/images/skill/html.png" alt="HTML5" />
+            <img src="src/images/skill/css.png" alt="CSS3" />
+            <img src="src/images/skill/javascript.png" alt="Javascript" />
+            <img src="src/images/skill/fontawesome.png" alt="FontAwesome" />
+            <img src="src/images/skill/RWD.png" alt="RWD" />
           </div>
           <p>2020-02</p>
-          <a href="https://chaomow.github.io/resume/"><p>LINK TO</p></a>
+          <a onclick="showBOx('lodingBox')" href="https://chaomow.github.io/resume/"><i class="fas fa-link"></i></a>
         </div>
-      </div>
 
+        <div class="workArea">
+          <img class="workPicture"" src="src/images/profile/miya.png" alt="Manager" />
+          <div class="workInfo">
+            <p>即時通訊班務管理系統</p>
+            <p>使用者透過MSN、Yahoo即時通與本系統進行班務活動。</br>
+              透過讀取資料庫學生帳號資料，對平台MSN、Yahoo即時通噗浪(Plurk)、臉書(Facebook)、Gmail以及SMS簡訊發送即時通訊公告。</br>
+              使用者亦可透過本系統將日常行事曆做紀錄，並透過簡訊功能提醒行程。</br>
+              透過權限分級，使用者可讀取資料庫班費與租賃資料，總務股長可隨時方便進行班費資料的新增、修改、刪除。</br>
+              同學可於本系統修改個人租賃資料，而租賃股長可調閱全班學生聯絡資訊。</p>
+          </div>
+          <div class="workSkill">
+            <img src="src/images/skill/html.png" alt="HTML" />
+            <img src="src/images/skill/java.png" alt="JAVA" />
+            <img src="src/images/skill/jsp.png" alt="JSP" />
+            <img src="src/images/skill/googlecloud.png" alt="Google Cloud" />
+            <img src="src/images/skill/mysql.png" alt="My SQL" />
+          </div>
+          <p>2012-01</p>      
+        </div>
+
+        <div class="workArea">
+          <i class="fas fa-archive workPicture"></i>
+          <div class="workInfo">
+            <p>佐證資料</p>
+            <p>
+              大學專題 - 虛擬實境健身腳踏車系統</br>
+              大學專題 - 班務管理系統</br>
+              英文檢定 - 雅思均6分(對照多益750分)</br>
+              學歷文憑 - Stanley College West Australia</br>
+              學歷文憑 - 高雄應用科技大學資訊管理系</br>
+              學歷文憑 - 大安高級工業職業學校綜合高中</br>
+              比賽獎項 - 全國網頁競賽</br>
+              工作表現 - Aloft Perth 年度最佳員工提名</br>
+              工作表現 - Aloft Perth 季度最佳員工提名</br>
+            </p>
+          </div>
+          <p>2020-01</p>   
+          <a onclick="showBOx('lodingBox')" href="./src/file/Certification.pdf"><i class="fas fa-cloud-download-alt"></i></a>   
+        </div>
+
+      </div>
     </div>
 
     <!-- made by -->

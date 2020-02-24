@@ -108,7 +108,7 @@ function onScroll() {
   window.scrollY === 0
     ? (document.getElementsByClassName("header")[0].style.opacity = 0)
     : (document.getElementsByClassName("header")[0].style.opacity = 0.4);
-  window.innerHeight + window.scrollY >= document.body.offsetHeight
+  window.innerHeight + window.scrollY + 20 >= document.body.offsetHeight
     ? (document.getElementsByClassName("iconGodown")[0].style.opacity = 0)
     : (document.getElementsByClassName("iconGodown")[0].style.opacity = 0.5);
 }
